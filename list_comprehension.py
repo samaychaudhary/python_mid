@@ -56,3 +56,9 @@ example = [[1,2,3],[1,2,3],[1,2,3]]
 def nested_loop(num):
     return[ [m for m in range(1,num+1)] for k in range(1,num+1)]
 print (nested_loop(3))
+
+
+
+def reverse(no):
+    return[i[-1::-1] for i in given_list]
+print (reverse(given_list))
