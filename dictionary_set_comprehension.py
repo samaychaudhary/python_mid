@@ -4,7 +4,7 @@ syntax1 : {append_item for loop}
 syntax2 : {i: ("even" if i%2==0 else "odd") for loop)
 0) intro>>> create dictionary in one line."""
 
-# odd even without comprehension
+"""# odd even without comprehension
 user_number = int(input("enter a number"))
 def oddeven(any_number):
     odd_even_numbers = {}
@@ -67,16 +67,16 @@ number = int(input("enter a number"))
 def square(any_num):
     return{(i,i**2) for (i) in range(0,number+1)}
 ok = square(number)
-print (ok)
+print (ok)"""
 
-a,b = input("enter 5 names: ").split(',')
+a,b = input("enter 2 names:").split(',')
 name_list = [a,b]
 
 def first_letter(name):
-    letter = {}
+    letter = []
     for i in name:
-        letter = i[0]
-    return letter
+        letter.append(i[0])
+    return set(letter)
         
     
 ok = first_letter(name_list)
