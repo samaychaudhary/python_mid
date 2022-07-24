@@ -32,4 +32,4 @@ def find_name(name_list,target_name):
         
 
 ok = find_name(list_of_names, "samay")
-print (ok)
+print (ok) #lol
