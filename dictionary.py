@@ -191,7 +191,7 @@ anything= cube(user_number)
 print (anything)
 
 
-#counting characters
+#counting charactersgit 
 user_name = input("enter your name")
 def count_char(name):
     dict = {}
