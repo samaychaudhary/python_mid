@@ -1,0 +1,2 @@
+samay,10000
+kritika,20000

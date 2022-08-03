@@ -1,31 +1,31 @@
 """
->>>> flexible function
+# >>>> flexible function
 
-*operator or *args or *kwargs"""
+# *operator or *args or *kwargs
 
-#*arg"""              #unlimited values can be provided. 
+#*arg            #unlimited values can be provided. 
 
 # args takes values in tuples
-"""def sum(a,b):
+def sum(a,b):
     return a +b 
 print(sum(3,4))
 
 def another_sum(*args):       #*kritika is args, which means unlimited arguements can be taken. not like before that we need to specify how many we need to take.
     print (args)
     print (type(args))
-print (another_sum(2,3,4))  """  #unlimited values provided
+print (another_sum(2,3,4))    #unlimited values provided
 
 
-"""def calculator(*args):
+def calculator(*args):
     sum=0
     for i in args:
         sum+=i
     return sum 
-print(calculator(2,4,2))"""
+print(calculator(2,4,2))
 
 
 
-"""def calculator(num1,*args):     #first paramter then only args
+def calculator(num1,*args):     #first paramter then only args
     sum=0 +num1
     for i in args:
         sum+=i
@@ -37,12 +37,12 @@ print(calculator())
 
 a = int(input("enter numbers")).split(',')
 def calculator(num1,*args):
-    for i in num1:"""
+    for i in num1:
         
 # list = [3,4,5,6]
 # print (sum(*list))
 
-"""# the power will be given by user. 
+
 power_number = int(input('enter a number'))
 list_num = [3,4,5,6]
 
@@ -62,26 +62,25 @@ def to_power(num,*args):
         return [i**num for i in args]
     else:
         return "you did not pass args"
-print (to_power(power_number,*list_num))"""
-        
+print (to_power(power_number,*list_num))
+
 
 # unsupported operand type bhaneko string lai multiply garna lageko bhane
 
 
+"""
 
 
-"""
-**KWARGS
-double star denotes kwargs
-0) intro
->>>about the problem and solution of function for *kwargs(convensions)
-"""
+# **KWARGS
+# double star denotes kwargs
+# 0) intro
+# >>>about the problem and solution of function for *kwargs(convensions)
+# """
 # kwargs takes values in dictionary
 
 #kwargs keeps everything in dictionary
 
-from pickle import FALSE
-from re import U
+
 
 
 def sum_all_num(**kwargs):     #kwargs = key word args

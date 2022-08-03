@@ -46,6 +46,7 @@ task1: return the list of square num from the list with >> normal way, list comp
 
 num_list = [1,2,3,4]   #iterables list  by default iterable
 
+
 def square(a):
     return a**2 
 # oko = square(num_list)
@@ -61,7 +62,7 @@ for i in k_ho:
     print (f"k_ho>>>>{i}")
 
 
- #using lambda                                                 # map for like combining everything..no need to make a function..or call it or anything
+ #using lambda                                                 # map for like combining everything...iterating...no need to make a function..or call it or anything
 k_ho = list(map(lambda a:a**2, num_list))        #lambda we use to denote any anonymous whole function. 
 print (k_ho)
 
@@ -117,7 +118,9 @@ def even_numbers(a):
 print (even_numbers(num_list))
 
 # using map and lambda
-evenn = print ( list(map(lambda a:a%2==0, num_list)))
+evenn = print (list(map(lambda a:a%2==0, num_list)))
+evenn = print (tuple(map(lambda a:a%2==0, num_list)))
+evenn = print (set(map(lambda a:a%2==0, num_list)))
 
 
 
@@ -189,6 +192,7 @@ print (ziplist)
 
 ok2,ok1 = zip(*ziplist)
 print (ok1)
+
 
 #same mathi wala
 user_number =int(input("enter a number"))

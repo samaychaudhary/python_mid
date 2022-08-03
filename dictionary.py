@@ -6,7 +6,7 @@ it is an unordered collection of items of any data type in the form of key: valu
 ex:  firstname(a) = samay : key:valuepair
 ex: days={"day1":"sunday","day2":"monday" """
  
-# {"key" : "value"} >>> {"age":19}
+"""# {"key" : "value"} >>> {"age":19}
 
 #1) how to create dictionaries
 #type 1
@@ -24,19 +24,19 @@ print (days2)
 print (type(days2))
 
 """
-2) how to access data from dictionary
-{'day4': 'wednesday', 'day5': 'thursday', 'day6': 'friday'}
->>>>> no indexing
->>>>>days["day1"]
->>>>>> type function"""
+# 2) how to access data from dictionary
+# {'day4': 'wednesday', 'day5': 'thursday', 'day6': 'friday'}
+# >>>>> no indexing
+# >>>>>days["day1"]
+# >>>>>> type function"""
 
-print(days2["day4"])      # need to write what you are looking for>>> indexing doesnt work
+# print(days2["day4"])      # need to write what you are looking for>>> indexing doesnt work
+
+
+# 3) which type of data can dictionary store?
+# >> anything (number, string, list, dictionary)"""
 
 """
-3) which type of data can dictionary store?
->> anything (number, string, list, dictionary)"""
-
-
 any_dict = {
     "f_name":"maharshi",
     "age":23,
@@ -55,7 +55,7 @@ user = {
     "l_name":"sharma",
     "age":19,
     "fav_movie":["thor","marvel"],
-    "fav_food":["pizza","chownein"],
+    "fav_food":["pizza","chowmein"],
     "lives in":"kathmandu"
 }
 print (user["fav_movie"][1]) #marvel aaunu paryo
@@ -76,10 +76,10 @@ print (any_dict)
 if "f_name" in any_dict:
     print ("present")
 
-if "maharshi" in any_dict:        #not present aaucha because its an value pair not keyword.
+if "maharshi" in any_dict:        #not present aaucha because its a value pair not keyword.
     print ("present")
 else:
-    print ("not present")
+    print ("not presentt")
 
 #different methods huncha>>>> keys(),values(),items(),copy(),clear(),get()
 
@@ -100,7 +100,7 @@ print (any_dict2)
 
 any_dict2.clear()
 print (any_dict2)
-
+"""
 """
 6) add, update, pop and popitem method in dictionary
 --> days["all_days"]=["day1","day2","day3"]
@@ -108,6 +108,16 @@ print (any_dict2)
 --> days.pop("all_days") # which returned the value of pop(key)
 --> days.popitem() # randomly delete one item and returned the value of pop(key)
 """
+
+any_dict = {
+    "f_name":"maharshi",
+    "age":23,
+    "fav_song":["s1","s2",11,True],
+    "others" :{
+        "fav_game":"football",
+        "fav_programming":"python"
+    }
+}
 
 dict1 = {"day1" : "sunday", "day2":"monday"}
 dict2 = {"day3":"wednesday", "day4":"tuesday"}
@@ -168,11 +178,11 @@ if (any_dict.get("address")):
 else:
     print ("not present")
 
-"""
-8)more about dictionary
->> get method
-ex: days["apple"]>>> error but days.get("day7","not found")>>>> no error and result too
->>>>>>>>>. get method always took last/updated value when same keys are pressnt in dictionary"""
+
+# 8)more about dictionary
+# >> get method
+# ex: days["apple"]>>> error but days.get("day7","not found")>>>> no error and result too
+# >>>>>>>>>. get method always took last/updated value when same keys are pressnt in dictionary
 
 print (days.get("day5","Sorry! your value was not found"))
 

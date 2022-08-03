@@ -1,4 +1,4 @@
-def decorator_function(any_function):
+"""def decorator_function(any_function):
     def wrapper_function(*args,**kwargs):
         print('This is extra function')
         return any_function(*args,**kwargs)
@@ -31,7 +31,7 @@ def add_two_num(num1,num2):
 add_two_num(3,5)      #doesnt print like this
 print (add_two_num(3,5))    #prints..
 
-
+"""
 
 #importing module
 

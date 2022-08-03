@@ -7,7 +7,7 @@
 """
 
 # 0) Intro  -------------------------------->
-import re
+
 
 
 def square(a):
@@ -19,7 +19,7 @@ print(s(7)) # but we can call and treat s as a square function
 print(s.__name__)
 print(square.__name__)
 
-# 1) pass function as a argumnet    ------------->
+# 1) pass function as a arguement    ------------->
 # --> for eg: map function 
 any_list = [1,2,3]
 print(list(map(lambda a:a**2, any_list)))
